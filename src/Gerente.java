@@ -7,6 +7,7 @@ public class Gerente extends Funcionario {
 
     // Tanto el getBonificacion tanto de funcionario y Gerente es sobreescritura de metodo
     public double getBonificacion(){
+        System.out.println("EJECUTANDO DESDE EXTENDS GERENTE");
         return super.getSalario() + super.getBonificacion();
     }
     public void setClave(String clave){
